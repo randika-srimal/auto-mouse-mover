@@ -1,6 +1,7 @@
 #! /bin/bash
 sudo apt-get --assume-yes install xdotool;
 clear;
+wmctrl -l|awk '{$3=""; $2=""; $1=""; print $0}'
 echo "Press any key to quit from auto mouse move";
 
 while [ true ] ; do
